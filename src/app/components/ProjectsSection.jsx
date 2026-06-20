@@ -2,12 +2,26 @@
 import nextpitch from "@/assets/images/nextpitch.png";
 import maqnews from "@/assets/images/maqnews.png";
 import blogsite from "@/assets/images/blogsite.png";
+import context_bridge from "@/assets/images/context_bridge.png";
+import yapapp from "@/assets/images/yapapp.png";
 import Card from "./Card";
 import { useRef } from "react";
 import SectionHeader from "./SectionHeader";
 
 
 const portfolioProjects = [
+    {
+        company: "NextPitch",
+        year: "2024",
+        title: "Startup Pitching Web Platform",
+        results: [
+            { title: "Helps users craft compelling startup pitches" },
+            { title: "Streamlined UX with dynamic pitch templates" },
+            { title: "Built with Next.js and styled using Tailwind CSS" },
+        ],
+        link: "https://github.com/MindJOBSS/NextPitch",
+        image: nextpitch,
+    },
     {
         company: "MaqNews",
         year: "2025",
@@ -21,16 +35,28 @@ const portfolioProjects = [
         image: maqnews,
     },
     {
-        company: "NextPitch",
-        year: "2024",
-        title: "Startup Pitching Web Platform",
+        company: "Context Bridge",
+        year: "2026",
+        title: "Cross-LLM Context Transfer Tool",
         results: [
-            { title: "Helps users craft compelling startup pitches" },
-            { title: "Streamlined UX with dynamic pitch templates" },
-            { title: "Built with Next.js and styled using Tailwind CSS" },
+            { title: "Converts AI chats into portable context summaries" },
+            { title: "Preserves goals, facts, preferences, and progress" },
+            { title: "Uses Gemini Nano with browser-compatible fallback" },
         ],
-        link: "https://github.com/MindJOBSS/NextPitch",
-        image: nextpitch, 
+        link: "https://context-bridge-tau.vercel.app",
+        image: context_bridge,
+    },
+    {
+        company: "YapApp",
+        year: "2026",
+        title: "Real-Time Chat Application",
+        results: [
+            { title: "Built real-time messaging with Socket.IO and Pusher" },
+            { title: "Implemented secure authentication with JWT and Auth.js" },
+            { title: "Optimized scalability using Next.js and Redis" },
+        ],
+        link: "https://yapapp-next.vercel.app/login",
+        image: yapapp,
     },
     {
         company: "BlogSite",
